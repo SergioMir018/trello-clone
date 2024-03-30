@@ -31,7 +31,6 @@ const Aside = () => {
               </SetUserName>
             </BoardOptions>
           </BoardWrapper>
-          <span className="text-xs italic">Gratis</span>
         </div>
 
       </div>
@@ -60,9 +59,9 @@ const Aside = () => {
 
         <div id="boards-container" className="flex flex-col py-4">
           {boards && boards.map(board => (
-            <div key={board.id} className="px-4 py-1 hover:bg-muted-foreground">
+            <div key={board.id} className="px-4 py-1 hover:bg-muted-foreground rounded-md mx-2">
               <BoardWrapper id={`board-${board.id}`}>
-                <Link to={`/board/${board.id}`}>
+                <Link className={'w-[90%]'} to={`/board/${board.id}`}>
                   {board.title}
                 </Link>
                 <BoardOptions>

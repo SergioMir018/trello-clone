@@ -4,7 +4,7 @@ import { defineConfig } from "vite"
 
 export default defineConfig({
   plugins: [react()],
-  base: 'https://github.com/SergioMir018/trello-clone/',
+  base: 'https://sergiomir018.github.io/trello-clone/',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
